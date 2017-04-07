@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"mongoose-auto-increment",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "mongoose-auto-increment",
+    "description": "api documentation for [mongoose-auto-increment (v5.0.1)](https://github.com/codetunnel/mongoose-auto-increment#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-mongoose-auto-increment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mongoose-auto-increment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment)",
     "devDependencies": {
-        "mongoose-auto-increment": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "mongoose-auto-increment": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-mongoose-auto-increment",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-mongoose-auto-increment",
+    "keywords": [
+        "documentation",
+        "mongoose-auto-increment"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_mongoose_auto_increment.js",
+    "name": "npmdoc-mongoose-auto-increment",
+    "nameAlias": "npmdoc_mongoose_auto_increment",
+    "nameOriginal": "npmdoc-mongoose-auto-increment",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-mongoose-auto-increment"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
