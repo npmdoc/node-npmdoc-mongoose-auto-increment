@@ -1,6 +1,6 @@
 # npmdoc-mongoose-auto-increment
 
-#### api documentation for  mongoose-auto-increment (v5.0.1)  [![npm package](https://img.shields.io/npm/v/npmdoc-mongoose-auto-increment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mongoose-auto-increment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment)
+#### api documentation for  [mongoose-auto-increment (v5.0.1)](https://github.com/codetunnel/mongoose-auto-increment#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mongoose-auto-increment.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mongoose-auto-increment) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mongoose-auto-increment)
 
 #### This plugin allows you to auto-increment any field on any mongoose schema that you wish.
 
@@ -21,25 +21,48 @@
 ```json
 
 {
-    "name": "mongoose-auto-increment",
-    "version": "5.0.1",
-    "description": "This plugin allows you to auto-increment any field on any mongoose schema that you wish.",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/codetunnel/mongoose-auto-increment.git"
+    "author": {
+        "name": "Alex Ford",
+        "url": "Chevex"
     },
+    "bugs": {
+        "url": "https://github.com/codetunnel/mongoose-auto-increment/issues"
+    },
+    "contributors": [
+        {
+            "name": "Nassor Paulino da Silva",
+            "url": "rossan"
+        },
+        {
+            "name": "Misha Koryak",
+            "url": "mkoryak"
+        },
+        {
+            "name": "Christopher Hiller",
+            "url": "boneskull"
+        },
+        {
+            "name": "tomaskavka",
+            "url": "https://github.com/tomaskavka"
+        }
+    ],
     "dependencies": {
         "extend": "^3.0.0"
     },
-    "peerDependencies": {
-        "mongoose": "^4.1.12"
-    },
+    "description": "This plugin allows you to auto-increment any field on any mongoose schema that you wish.",
     "devDependencies": {
         "async": "*",
         "chai": "*",
         "mocha": "*",
         "mongoose": "^4.1.12"
     },
+    "directories": {},
+    "dist": {
+        "shasum": "827e051d9cc371dabe8bff1a704431d341cb79df",
+        "tarball": "https://registry.npmjs.org/mongoose-auto-increment/-/mongoose-auto-increment-5.0.1.tgz"
+    },
+    "gitHead": "50bd2a642c7565cf0a9f2c368d437b83160ad0a6",
+    "homepage": "https://github.com/codetunnel/mongoose-auto-increment#readme",
     "keywords": [
         "mongoose",
         "plugin",
@@ -55,33 +78,25 @@
         "pureautoinc",
         "mongoose-pureautoinc"
     ],
-    "author": {
-        "name": "Alex Ford (Chevex)",
-        "url": "http://CodeTunnel.com"
-    },
-    "contributors": [
+    "maintainers": [
         {
-            "name": "Nassor Paulino da Silva (rossan)"
-        },
-        {
-            "name": "Misha Koryak (mkoryak)",
-            "url": "http://ExhibitionNest.com"
-        },
-        {
-            "name": "Christopher Hiller (boneskull)",
-            "url": "http://boneskull.github.io/"
-        },
-        {
-            "name": "tomaskavka",
-            "url": "https://github.com/tomaskavka"
+            "name": "chevex"
         }
     ],
+    "name": "mongoose-auto-increment",
+    "optionalDependencies": {},
+    "peerDependencies": {
+        "mongoose": "^4.1.12"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/codetunnel/mongoose-auto-increment.git"
+    },
     "scripts": {
         "test": "node_modules/mocha/bin/mocha"
     },
-    "bugs": {
-        "url": "https://github.com/codetunnel/mongoose-auto-increment/issues"
-    }
+    "version": "5.0.1",
+    "bin": {}
 }
 ```
 
